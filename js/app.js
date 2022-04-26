@@ -9,6 +9,8 @@ let messageError = "Введены неверные данные";
 
 let colorBlue = '#1fddff';
 let colorGreen = '#00bf8f';
+let colorRed = '#F11712';
+let colorBlack = '#000';
 
 
 function getWeightAdvice() {
@@ -20,13 +22,13 @@ function getWeightAdvice() {
         document.getElementById("res").style.color = colorBlue;
     } else if (w1 <= 95) {
         document.getElementById("res").innerHTML = message2;
-        document.getElementById("res").style.color = color;
+        document.getElementById("res").style.color = colorGreen;
     } else if (w1 >= 96) {
         document.getElementById("res").innerHTML = message3;
-        document.getElementById("res").style.color = '#F11712';
+        document.getElementById("res").style.color = colorRed;
     } else {
         document.getElementById("res").innerHTML = messageError;
-        document.getElementById("res").style.color = '#000';
+        document.getElementById("res").style.color = colorBlack;
     }
     
 }
