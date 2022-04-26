@@ -2,10 +2,9 @@
 
 document.getElementById("go").addEventListener("click", getWeightAdvice);
 
-let message1 = "Вам необходимо пройти программу по набору массы";
-let message2 = "Ваш вес соответствует требованиям";
-let message3 = "К сожалению вес привышает допустимое значение. Необходимо пройти программу по сброссу массы";
-let messageError = "Введены неверные данные";
+
+// 1. Повторяющиеся данные добавляем в переменные 
+// 2. Изменить название переменных, на более осмысленные
 
 let colorBlue = '#1fddff';
 let colorGreen = '#00bf8f';
@@ -18,16 +17,16 @@ function getWeightAdvice() {
 
 
     if (w1 <= 40) {
-        document.getElementById("res").innerHTML = message1;
+        document.getElementById("res").innerHTML = "Вам необходимо пройти программу по набору массы";
         document.getElementById("res").style.color = colorBlue;
     } else if (w1 <= 95) {
-        document.getElementById("res").innerHTML = message2;
+        document.getElementById("res").innerHTML = "Ваш вес соответствует требованиям";
         document.getElementById("res").style.color = colorGreen;
     } else if (w1 >= 96) {
-        document.getElementById("res").innerHTML = message3;
+        document.getElementById("res").innerHTML = "К сожалению вес привышает допустимое значение. Необходимо пройти программу по сброссу массы";
         document.getElementById("res").style.color = colorRed;
     } else {
-        document.getElementById("res").innerHTML = messageError;
+        document.getElementById("res").innerHTML = "Введены неверные данные";
         document.getElementById("res").style.color = colorBlack;
     }
     
