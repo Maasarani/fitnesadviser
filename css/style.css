@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.form {
+    display: flex;
+    width: 400px;
+    height: 600px;
+    background-image: linear-gradient(#e66465, #9198e5);
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 50px 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.form__main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.form__main h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+.inner {
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user__weight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+    padding: 14px 14px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+::placeholder {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.main__btn {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 14px 14px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+}
+
+.main__btn:hover {
+    padding: 13px 13px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.result {
+    padding: 15px;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.result p {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
