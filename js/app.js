@@ -14,7 +14,6 @@ function displayMessage (message, color, fontsize, fontfamily) {
     document.getElementById("res").style.fontFamily = fontfamily;
 }
 
-
 function getWeightAdvice() {
     let weightValue = document.getElementById("uW").value;
 
@@ -25,10 +24,9 @@ function getWeightAdvice() {
     } else if (weightValue <= 95) {
         displayMessage("Ваш вес соответствует требованиям", COLOR_GREEN, '25px', 'sans-serif');
     } else if (weightValue >= 96) {
-        displayMessage(`К сожалению вес привышает допустимое значение. 
+        displayMessage(`К сожалению вес привышает допустимое значение.\ 
         Необходимо пройти программу по сброссу массы`, COLOR_RED, '15px', 'serif');
     }
-   
 }
 
 
